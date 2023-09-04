@@ -35,7 +35,7 @@ a:hover {
   text-decoration: underline;
 }
 header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,8 +55,7 @@ main section {
   padding: 200px 0;
   width: 100%;
   margin: auto;
-  height: 100vh;
-  min-height: fit-content;
+  min-height: 100vh;
 }
 
 #home {
@@ -117,7 +116,6 @@ main .tit {
 }
 
 #activity {
-  padding: 160px 0 0;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -125,18 +123,13 @@ main .tit {
 }
 
 #activity .activ-list {
-  list-style: inherit;
-  padding-left: 32px;
+  padding-left: 24px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 24px;
-}
-.activ-list li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  list-style: disc;
 }
 .activ-list li .activ-tit {
   font-size: 22px;
@@ -164,12 +157,11 @@ main .tit {
 }
 
 #contact {
-  padding: 200px 0 0;
   width: 80%;
-  height: Calc(100vh - 72px);
   display: flex;
   flex-direction: column;
   gap: 30px;
+  height: Calc(100vh - 72px);
 }
 #contact .contact-cont {
   padding: 50px;
@@ -215,12 +207,95 @@ footer {
   height: 72px;
   position: relative;
   border-top: 1px solid #8d9299;
+  color: #8d9299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer small {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #8d9299;
+/* 모바일 media query */
+@media (max-width: 767px) {
+  header {
+    height: 52px;
+  }
+  header .tit img {
+    height: 36px;
+  }
+  header .nav-list {
+    display: none;
+  }
+  #home {
+    width: 100vh;
+  }
+
+  main section {
+    padding: 60px 0;
+    height: 100%;
+    margin: auto;
+    min-height: fit-content;
+  }
+
+  #home {
+    flex-direction: column;
+    width: 100%;
+  }
+  #home .tit-descript {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  #home .tit-descript strong {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  #home .profile-img {
+    width: 300px;
+  }
+
+  main .tit {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  #about .descript {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  #about .additional-info {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #activity .activ-img-list {
+    gap: 30px;
+  }
+  #activity .activ-img-list img {
+    width: 300px;
+  }
+
+  #activity .activ-list {
+    font-size: 16px;
+    gap: 20px;
+    margin-bottom: 0px;
+  }
+  .activ-list li .activ-tit {
+    font-size: 20px;
+  }
+  #contact {
+    height: fit-content;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .contact-box div {
+    margin: 0;
+  }
 }
