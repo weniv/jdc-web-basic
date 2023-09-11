@@ -108,7 +108,7 @@ main .tit {
   font-size: 16px;
 }
 #about .descript {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.2;
 }
 #about .additional-info {
@@ -181,6 +181,7 @@ main .tit {
 .contact-cont .descript {
   font-size: 14px;
   width: 80%;
+  line-height: 1.4;
 }
 
 .contact-box {
