@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 72px;
-  padding: 0 20px;
+  padding: 0 40px;
   position: fixed;
   z-index: 5;
   background-color: #ffe494;
@@ -138,8 +138,9 @@ main .tit {
 #activity .activ-img-list {
   display: flex;
   gap: 72px;
-  overflow: scroll;
-  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%; 
   padding: 24px 0;
 }
 .activ-img-list img {
