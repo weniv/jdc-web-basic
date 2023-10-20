@@ -140,21 +140,13 @@ main .tit {
   gap: 72px;
   overflow-x: auto;
   overflow-y: hidden;
-  width: 100%; 
+  width: 100%;
   padding: 24px 0;
 }
 .activ-img-list img {
   width: 400px;
   border-radius: 20px;
-}
-.activ-img-list img.sup {
-  box-shadow: 12px 12px 0 0 gold;
-}
-.activ-img-list img.work {
-  box-shadow: 12px 12px 0 0 orangered;
-}
-.activ-img-list img.schor {
-  box-shadow: 12px 12px 0 0 orange;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 #contact {
@@ -223,9 +215,7 @@ footer {
   header .tit img {
     height: 36px;
   }
-  header .nav-list {
-    display: none;
-  }
+
   #home {
     width: 100vh;
   }
